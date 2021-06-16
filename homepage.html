@@ -1,0 +1,576 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="./assets/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/b1ff58fb64.js" crossorigin="anonymous"></script>
+    <script src="./assets/main.js"> </script>
+  </head>
+  <body>
+    <div class="z-10" id="flex-box">
+      <div class="header py-4 bg-white lg:py-10">
+        <div class="container flex items-center justify-between">
+          <div class="logo"> <a href="/homepage.html"><img src="./assets/image/logo.webp" alt=""/></a></div>
+          <div class="input-form hidden lg:inline-block">
+            <div class="w-96 flex items-center px-4 rounded-lg background mx-4"><i class="fas fa-search text-gray-500"></i>
+              <input class="bg-gray-300 w-full border-none ml-2 p-2 focus:outline-none" type="text" placeholder="Discover news, articles and more..."/>
+            </div>
+          </div>
+          <div class="menu hidden lg:flex lg:items-center">
+            <ul class="flex mr-3">
+              <li class="mr-3"><a class="p-1 font-bold" href="/homepage.html"> Home</a></li>
+              <li class="mr-3"><a class="p-1 font-bold" href="/team"> Our Team</a></li>
+              <li><a class="p-1 font-bold" href="/contact"> Contact</a></li>
+            </ul>
+            <div class="button"> 
+              <button class="light"><span><img src="./assets/image/day.svg" alt=""/></span></button>
+              <button class="night hidden"><span><img src="./assets/image/night.svg" alt=""/></span></button>
+            </div>
+          </div>
+          <div class="mobile-menu lg:hidden">
+            <ul class="flex">
+              <li>
+                <button class="m-1 p-3"> <i class="text-xl fas fa-sun"> </i></button>
+              </li>
+              <li>
+                <button class="m-1 p-3"> <i class="text-xl fas fa-search"> </i></button>
+              </li>
+              <li> 
+                <button class="m-1 p-3"> <i class="text-xl fas fa-bars"></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="editor mt-20">
+        <div class="container">
+          <h2 class="editor-title text-black mb-10 text-2xl font-bold lg:pl-5 ">Editor's Pick This Week </h2>
+          <div class="content-flex">
+            <div class="flex-big lg:grid lg:grid-cols-3 lg:gap-x-4">
+              <div class="items relative bg-white flex p-2 items-center justify-between mb-3 rounded-xl  lg:p-0 lg:inline-block lg:bg-transparent">
+                <div class="image relative rounded-xl w-5/12 lg:w-full"><img class="w-40 rounded-lg mr-2 lg:w-full lg:rounded-xl" src="./assets/image/police-scale.webp" alt=""/>
+                  <div class="background-flex lg:absolute"> </div>
+                </div>
+                <div class="content w-7/12 lg:w-full lg:absolute xl:top-1/3 lg:transform lg:translate-y-1/4 lg:text-white lg:p-8 lg:ml-0">
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-white lg:text-2xl" href="#"> Police Arrested More Than 11000 People At Protests Across The US</a></div>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/jane-smith-scale.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-white lg:text-sm lg:mb-2">Jane Smith </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-lg mx-2"></i>2 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl  lg:p-0 lg:inline-block lg:bg-transparent">
+                <div class="image relative rounded-xl w-5/12 lg:w-full"><img class="w-40 rounded-lg mr-2 lg:w-full lg:rounded-xl" src="./assets/image/only-scale.webp" alt=""/>
+                  <div class="background-flex lg:absolute"> </div>
+                </div>
+                <div class="content lg:absolute w-7/12 lg:w-full xl:top-1/3 lg:transform lg:translate-y-1/4 lg:text-white lg:p-8 lg:ml-0">
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-white lg:text-2xl" href="#"> Only Someone Who's Seen The Mummy Will Pass This</a></div>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/john-doe.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-white lg:text-sm lg:mb-2">John Doe </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>June 02, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-lg mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl  lg:p-0 lg:inline-block lg:bg-transparent">
+                <div class="image relative rounded-xl w-5/12 lg:w-full"><img class="w-40 rounded-lg mr-2 lg:w-full lg:rounded-xl" src="./assets/image/burger.webp" alt=""/>
+                  <div class="background-flex lg:absolute"> </div>
+                </div>
+                <div class="content lg:absolute w-7/12 lg:w-full xl:top-1/3 lg:transform lg:translate-y-1/4 lg:text-white lg:p-8 lg:ml-0">
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-white lg:text-2xl" href="#"> 6 Versatile Burger Recipes Fit For Every Type of Eater</a></div>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/john-doe.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-white lg:text-sm lg:mb-2">John Doe  </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-lg mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-cols-3 mt-4 lg:grid lg:grid-cols-3 lg:gap-x-4">
+              <div class="items relative bg-white flex p-2 items-center mb-3">
+                <div class="image relative rounded-xl w-5/12 "><img class="w-40 rounded-lg  " src="./assets/image/pizza.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-5">
+                  <div class="sub mb-4"><a class="text-xs bg-green-200 text-black px-4 rounded-lg py-1 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Recipes  </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">6 Versatile Burger Recipes Fit For Every Type of Eater</a></div>
+                  <div class="auth">                                       
+                    <div class="info">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold mb-2">Jane Smith </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base ml-2 mr-1"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl">
+                <div class="image relative w-5/12 "><img class="w-40 rounded-lg" src="./assets/image/dress.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-5">
+                  <div class="sub mb-4"><a class="text-xs bg-yellow-100 text-black px-4 rounded-lg py-1 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Shopping  </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">6 Versatile Burger Recipes Fit For Every Type of Eater</a></div>
+                  <div class="auth">                                       
+                    <div class="info">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold mb-2">Steve Grant </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base ml-2 mr-1"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl">
+                <div class="image relative rounded-xl w-5/12 "><img class="w-40 rounded-lg" src="./assets/image/cake.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-5">
+                  <div class="sub mb-4"><a class="text-xs bg-green-200 text-black px-4 rounded-lg py-1 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#"> Recipes </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">6 Versatile Burger Recipes Fit For Every Type of Eater</a></div>
+                  <div class="auth">                                       
+                    <div class="info">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold mb-2">John Doe</h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base ml-2 mr-1"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl">
+                <div class="image relative rounded-xl w-5/12 "><img class="w-40 rounded-lg" src="./assets/image/smile.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-5">
+                  <div class="sub mb-4"><a class="text-xs bg-yellow-100 text-black px-4 rounded-lg py-1 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Shopping  </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">6 Versatile Burger Recipes Fit For Every Type of Eater</a></div>
+                  <div class="auth">                                       
+                    <div class="info">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold mb-2">Jane Smith </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base ml-2 mr-1"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl">
+                <div class="image relative rounded-xl w-5/12 "><img class="w-40 rounded-lg" src="./assets/image/shop.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-5">
+                  <div class="sub mb-4"><a class="text-xs bg-yellow-100 text-black px-4 rounded-lg py-1 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Shopping  </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">6 Versatile Burger Recipes Fit For Every Type of Eater</a></div>
+                  <div class="auth">                                       
+                    <div class="info">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold mb-2">Jane Smith </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base ml-2 mr-1"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl">
+                <div class="image relative rounded-xl w-5/12 "><img class="w-40 rounded-lg" src="./assets/image/tv.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-5">
+                  <div class="sub mb-4"><a class="text-xs bg-blue-200 text-black px-4 rounded-lg py-1 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">TV & Movies </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">6 Versatile Burger Recipes Fit For Every Type of Eater</a></div>
+                  <div class="auth">                                       
+                    <div class="info">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold mb-2">john Doe </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base ml-2 mr-1"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="archive py-4 bg-white mt-20">
+        <div class="container lg:flex lg:items-center lg:jusstify-center">
+          <div class="heading text-center text-2xl font-bold text-black xl:text-5xl lg:w-6/12 lg:text-left xl:mr-5">
+            <h2 class="mb-4">Get Inspired to Achieve<br/><span class="text-gray-500">Enhanced Outcomes.</span></h2>
+          </div>
+          <div class="descripton hidden lg:inline-block lg:w-6/12 pl-20  lg:text-xl xl:border-l-4 xl:border-gray-200">
+            <h3 class="mb-4">“While one person hesitates because he feels inferior, the other is busy making mistakes and becoming superior.”</h3>
+            <h3 class="font-bold text-gray-500 text-base">Henry C. Link</h3>
+          </div>
+        </div>
+      </div>
+      <div class="new"> 
+        <div class="container"> 
+          <div class="heading py-8 flex justify-center lg:justify-between lg:py-10"><a class="text-center text-black text-xl font-bold lg:pl-5 lg:border-l-4 lg:border-gray-400 lg:text-2xl" href="#">News </a>
+            <button class="bg-blue-100 px-3 py-1 text-sm rounded-lg hidden  hover:bg-blue-300 hover:text-white duration-200 ease-linear lg:inline-block">View More </button>
+          </div>
+          <div class="new-content lg:flex lg:items-center">
+            <div class="right lg:w-8/12 lg:mr-6">
+              <div class="items relative bg-white mb-1 flex p-2 items-center mb-3 rounded-xl shadow-md  lg:mb-7 ">
+                <div class="image relative rounded-xl w-5/12 "><img class="w-40 rounded-lg mr-2 lg:w-full lg:h-72 lg:rounded-xl lg:object-cover " src="./assets/image/police.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-10 ">
+                  <div class="new-link"><a class="bg-violet" href="#">New </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-xl" href="#"> Police Arrested More Than 11000 People At Protests Across The US</a></div>
+                  <p class="hidden lg:block lg:mb-8 text-sm">Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to…</p>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/jane-smith-scale.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl shadow-md  ">
+                <div class="image relative rounded-xl w-5/12 "><img class="w-40 rounded-lg mr-2 lg:w-full lg:h-3/4 lg:rounded-xl" src="./assets/image/white-house.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-10 ">
+                  <div class="new-link"><a class="bg-violet" href="#">New </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-xl" href="#"> A Cop Who Said Let's Start A Riot In An Instagram Post Has Been Fired</a></div>
+                  <p class="hidden lg:block lg:mb-8 text-sm">Lorem markdownum transitque nondum, Peliaeque at poterat exegit, urbis quo; tibi. Cursus mecum adit…</p>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/john-doe.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">John Doe</h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>May 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left hidden lg:block lg:w-4/12">
+              <div class="items relative bg-white p-2 mb-3 rounded-xl shadow-md  h-full">
+                <div class="image relative rounded-xl"><img class="rounded-lg lg:w-full lg:h-full lg:rounded-xl" src="./assets/image/kid.webp" alt=""/></div>
+                <div class="content p-8">
+                  <div class="new-link mb-6"><a class="bg-violet" href="#">New </a></div>
+                  <div class="title mb-6"><a class="text-black text-lg font-bold  lg:text-xl" href="#">A Lot Of Celebrities Are Being Useless Right Now</a></div>
+                  <p class="mb-8 text-sm leading-6">Lorem markdownum illic venturi instructa nobis Echidnae,  cum  quid magna fatebor. Levat placetque…</p>
+                  <div class="auth lg:flex lg:items-center ">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/steve.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold  lg:text-sm lg:mb-2">Steve Grant </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pices"> 
+        <div class="container"> 
+          <div class="heading py-8 flex justify-center lg:justify-between lg:py-10"><a class="text-center text-black text-xl font-bold lg:pl-5 lg:border-l-4 lg:border-gray-400 lg:text-2xl" href="#">Recipes </a>
+            <button class="bg-blue-100 px-3 py-1 text-sm rounded-lg hidden  hover:bg-blue-300 hover:text-white duration-200 ease-linear lg:inline-block">View More </button>
+          </div>
+          <div class="new-content lg:flex lg:items-center">
+            <div class="right lg:w-8/12 lg:mr-6">
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl shadow-md  lg:mb-7 ">
+                <div class="image relative rounded-xl w-5/12 lg:w-5/12 "><img class="w-40 rounded-lg mr-2 lg:w-full lg:h-2/4 lg:rounded-xl " src="./assets/image/bbq.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-10 ">
+                  <div class="sub mb-4"><a class="text-xs bg-green-200 text-black px-4 rounded-lg py-1 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Recipes </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-xl" href="#"> 5 BBQ Recipes to Get Your Summer Started</a></div>
+                  <p class="hidden lg:block lg:mb-8 text-sm">Dona curvo sub evertere quam ultimus aridus Lorem markdownum , sub tecumque, posceret revertar…</p>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/john-doe.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">John Doe</h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>May 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mini-flex lg:grid lg:grid-cols-2 lg:gap-6"> 
+                <div class="items mb-4 relative bg-white flex p-2 items-center rounded-md shadow-md lg:mb-0 lg:pl-4 lg:border-l-4 lg:border-blue-400">                                 
+                  <div class="content  ">    
+                    <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#"> 6 Versatile Burger Recipes Fit For Every Type of Eater</a></div>
+                    <div class="auth lg:flex lg:items-center">
+                      <div class="info flex justify-between items-center lg:inline-block">
+                        <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                        <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items relative mb-4 bg-white flex p-2 items-center rounded-md shadow-md lg:mb-0 lg:pl-4 lg:border-l-4 lg:border-blue-400">                                
+                  <div class="content  ">                                       
+                    <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#"> Community Coconut And Banana Oat Muffins</a></div>
+                    <div class="auth lg:flex lg:items-center">
+                      <div class="info flex justify-between items-center lg:inline-block">
+                        <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                        <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items mb-4 relative bg-white flex p-2 items-center rounded-md shadow-md lg:mb-0 lg:pl-4 lg:border-l-4 lg:border-blue-400">
+                  <div class="image w-38 relative rounded-xl w-5/12"><img class="w-full cover lg:h-36 lg:w-28" src="./assets/image/bg-cover.png" alt=""/><span class="absolute top-1/3 left-1/3 transform  translate-x-2 lg:top-2/4 lg:-translate-y-6 lg:left-2/4 lg:-translate-x-3/4"> <img class="w-10 lg:w-5 " src="./assets/image/letter.svg" alt=""/></span>
+                    <p class="hidden lg:inline-block lg:absolute bottom-1/4  left-1/4 transform text-black font-semibold  -translate-y-1">Repices</p>
+                  </div>
+                  <div class="content w-7/12 ml-5 ">
+                    <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">Community Easy Sweet & Spicy Air Fryer Salmon</a></div>
+                    <div class="auth">
+                      <div class="info flex justify-between items-center lg:inline-block">
+                        <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                        <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items relative bg-white flex p-2 items-center rounded-md shadow-md lg:pl-4 lg:border-l-4 lg:border-blue-400">
+                  <div class="image w-38 relative rounded-xl w-5/12"><img class="w-full cover lg:h-36 lg:w-28" src="./assets/image/bg-cover.png" alt=""/><span class="absolute top-1/3 left-1/3 transform  translate-x-2  lg:top-2/4 lg:-translate-y-6 lg:left-2/4 lg:-translate-x-3/4"> <img class="w-10 lg:w-5 " src="./assets/image/letter.svg" alt=""/></span>
+                    <p class="hidden lg:inline-block lg:absolute bottom-1/4  left-1/4 transform text-black font-semibold  -translate-y-1">Repices</p>
+                  </div>
+                  <div class="content w-7/12 ml-5 ">
+                    <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">Easy Slow Cooker Chili Cheese Fries</a></div>
+                    <div class="auth">
+                      <div class="info flex justify-between items-center lg:inline-block">
+                        <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                        <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left hidden lg:block lg:w-4/12">
+              <div class="items relative bg-white p-2 mb-3 rounded-xl shadow-md  h-full">
+                <div class="image relative rounded-xl"><img class="rounded-lg lg:w-full lg:h-full lg:rounded-xl" src="./assets/image/kimchi.webp" alt=""/></div>
+                <div class="content p-8">
+                  <div class="sub mb-4"><a class="text-xs bg-green-200 text-black px-4 rounded-lg py-1 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Recipes  </a></div>
+                  <div class="title mb-6"><a class="text-black text-lg font-bold  lg:text-xl" href="#">Cafemaddy Shows You 3 Creative Ways Of Using Kimchi</a></div>
+                  <p class="mb-6 text-sm leading-6">Lorem markdownum illic venturi instructa nobis Echidnae,  cum  quid magna fatebor. Levat placetque…</p>
+                  <div class="auth lg:flex lg:items-center ">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/steve.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold  lg:text-sm lg:mb-2">Steve Grant </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Shopping">
+        <div class="container"> 
+          <div class="heading py-8 flex hustify-center lg:justify-between lg:py-10"><a class="text-center text-black text-xl font-bold lg:pl-5 lg:border-l-4 lg:border-gray-400 lg:text-2xl">Shopping</a>
+            <button class="bg-blue-100 px-3 py-1 text-sm rounded-lg hidden  hover:bg-blue-300 hover:text-white duration-200 ease-linear lg:inline-block">View More </button>
+          </div>
+          <div class="new-content lg:flex lg:items-center">
+            <div class="right lg:w-8/12 lg:mr-6">
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl shadow-md  lg:mb-7 ">
+                <div class="image relative rounded-xl w-5/12 lg:w-5/12 "><img class="w-40 rounded-lg mr-2 lg:w-full lg:h-3/4 lg:rounded-xl lg:object-cover " src="./assets/image/home.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-10 ">
+                  <div class="sub mb-4"><a class="text-xs bg-yellow-100 text-black px-5 font-medium rounded-lg py-2 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Shopping </a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-xl" href="#"> 27 Home Decor Upgrades You Can Get For $25 Or Less</a></div>
+                  <p class="hidden lg:block lg:mb-8 text-sm">Lorem markdownum quisque caeli, aura niger  molitur tangam  licebit, cum quo utharenae pauper, eras…</p>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/steve.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold  lg:text-sm lg:mb-2">Steve Grant </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl shadow-md  ">
+                <div class="image relative rounded-xl w-5/12 "><img class="w-40 rounded-lg mr-2 h-40 lg:w-full  lg:h-72 lg:rounded-xl lg:object-cover " src="./assets/image/dress-scale.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-10 ">
+                  <div class="sub mb-4"><a class="text-xs bg-yellow-100 font-medium text-black px-5 rounded-lg py-2 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Shopping</a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-xl" href="#"> 29 Dresses That Are Definitely Ready For Warm Weather</a></div>
+                  <p class="hidden lg:block lg:mb-8 text-sm">Lorem markdownum illic venturi instructa nobis Echidnae,  cum  quid magna fatebor. Levat placetque…</p>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/steve.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold  lg:text-sm lg:mb-2">Steve Grant </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left hidden lg:block lg:w-4/12">
+              <div class="items relative bg-white p-2 mb-3 rounded-xl shadow-md  h-full">
+                <div class="image relative rounded-xl"><img class="rounded-lg lg:w-full lg:h-full lg:rounded-xl lg:object-cover" src="./assets/image/jean.webp" alt=""/></div>
+                <div class="content p-8">
+                  <div class="sub mb-4"><a class="text-xs bg-yellow-100 text-black px-5 font-medium rounded-lg py-2 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">Shopping </a></div>
+                  <div class="title mb-6"><a class="text-black text-lg font-bold  lg:text-xl" href="#">35 Impressive Father's Day Gifts That Only Look Expensive</a></div>
+                  <p class="mb-8 text-sm leading-6">Lorem markdownum obvius in seque opus, est bicorni forte; laeva.  Iurant patria beatam semel…</p>
+                  <div class="auth lg:flex lg:items-center ">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/jane-smith-scale.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold  lg:text-sm lg:mb-2">Jane Smith </h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>April 16, 2020<span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="television"> 
+        <div class="container"> 
+          <div class="heading py-8 flex justify-center lg:justify-between lg:py-10"><a class="text-center text-black text-xl font-bold lg:pl-5 lg:border-l-4 lg:border-gray-400 lg:text-2xl" href="#">TV & Movie </a>
+            <button class="bg-blue-100 px-3 py-1 text-sm rounded-lg hidden  hover:bg-blue-300 hover:text-white duration-200 ease-linear lg:inline-block">View More </button>
+          </div>
+          <div class="new-content lg:flex lg:items-center">
+            <div class="right lg:w-8/12 lg:mr-6">
+              <div class="items relative bg-white flex p-2 items-center mb-3 rounded-xl shadow-md  lg:mb-7 ">
+                <div class="image relative rounded-xl w-5/12 lg:w-5/12 "><img class="w-40 rounded-lg mr-4 h-44 lg:w-full  lg:rounded-xl lg:h-72  lg:object-cover " src="./assets/image/only.webp" alt=""/></div>
+                <div class="content w-7/12 lg:ml-10 ">
+                  <div class="sub mb-2"><a class="text-xs bg-blue-200 text-black px-4 font-medium rounded-lg py-2 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">TV & Movies</a></div>
+                  <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-xl" href="#">Only Someone Who's Seen The Mummy Will Pass This</a></div>
+                  <p class="hidden lg:block lg:mb-8 text-sm">Primo in altis pelle alumnae Lorem markdownum obvius in seque opus, est bicorni forte; laeva…</p>
+                  <div class="auth lg:flex lg:items-center">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/john-doe.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">John Doe</h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>May 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mini-flex lg:grid lg:grid-cols-2 lg:gap-6"> 
+                <div class="items relative bg-white flex p-2 items-center rounded-md shadow-md mb-4 lg:mb-0 lg:pl-4 lg:border-l-4 lg:border-blue-400">                                 
+                  <div class="content  ">    
+                    <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#"> Here Are 22 Movies And Documentaries About Race</a></div>
+                    <div class="auth lg:flex lg:items-center">
+                      <div class="info flex justify-between items-center lg:inline-block">
+                        <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                        <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items relative bg-white flex p-2 items-center rounded-md shadow-md mb-4 lg:mb-0 lg:pl-4 lg:border-l-4 lg:border-blue-400">                                
+                  <div class="content  ">                                       
+                    <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#"> Here's How Fuller House Explained Aunt Becky's Absence</a></div>
+                    <div class="auth lg:flex lg:items-center">
+                      <div class="info flex justify-between items-center lg:inline-block">
+                        <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                        <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items relative bg-white flex p-2 items-center rounded-md shadow-md mb-4 lg:mb-0 lg:pl-4 lg:border-l-4 lg:border-blue-400">
+                  <div class="image w-38 relative rounded-xl w-5/12"><img class="w-full bg-blue-500 opacity-30 rounded-md lg:h-36 lg:w-28" src="./assets/image/bg-cover.png" alt=""/><span class="absolute top-1/3 left-1/3  transform  translate-y-1/3 lg:top-2/4 lg:-translate-y-6 lg:left-2/4 lg:-translate-x-3/4"> <img class="w-10 lg:w-5 " src="./assets/image/check.svg" alt=""/></span>
+                    <p class="hidden   lg:inline-block lg:absolute bottom-1/4  lg:left-3 transform text-black font-semibold  -translate-y-1">TV & Movie</p>
+                  </div>
+                  <div class="content w-7/12 ml-5 ">
+                    <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">It's Time To Vent Which Movie Sequels Were Unnecessary</a></div>
+                    <div class="auth">
+                      <div class="info flex justify-between items-center lg:inline-block">
+                        <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                        <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="items relative bg-white flex p-2 items-center rounded-md shadow-md lg:pl-4 lg:border-l-4 lg:border-blue-400">
+                  <div class="image w-38 relative rounded-xl w-5/12"><img class="w-full bg-blue-500 opacity-30 rounded-md lg:h-36 lg:w-28" src="./assets/image/bg-cover.png" alt=""/><span class="absolute top-1/3 left-1/3  transform  translate-y-1/3 lg:top-2/4 lg:-translate-y-6 lg:left-2/4 lg:-translate-x-3/4"> <img class="w-10 lg:w-5 " src="./assets/image/check.svg" alt=""/></span>
+                    <p class="hidden lg:inline-block lg:absolute bottom-1/4  left-3 transform text-black font-semibold  -translate-y-1">TV & Movie</p>
+                  </div>
+                  <div class="content w-7/12 ml-5 ">
+                    <div class="title mb-5"><a class="text-black text-lg font-bold lg:text-base" href="#">Lea Responded After Being Accused Of Bullying Her Former</a></div>
+                    <div class="auth">
+                      <div class="info flex justify-between items-center lg:inline-block">
+                        <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">Jane Smith </h3>
+                        <div class="time text-xs text-gray-400 lg:text-sm"><span>May 15, 2021</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>2 min</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left hidden lg:block lg:w-4/12">
+              <div class="items relative bg-white p-2 mb-3 rounded-xl shadow-md  h-full">
+                <div class="image relative rounded-xl"><img class="rounded-lg lg:w-full lg:h-full lg:rounded-xl object-cover" src="./assets/image/brother.webp" alt=""/></div>
+                <div class="content p-8">
+                  <div class="sub mb-4"><a class="text-xs bg-blue-200 text-black font-medium px-4 rounded-lg py-2 hover:bg-gray-500 duration-300 ease-linear hover:text-white" href="#">TV & Movies  </a></div>
+                  <div class="title mb-6"><a class="text-black text-lg font-bold  lg:text-xl" href="#">Cafemaddy Shows You 3 Creative Ways Of Using Kimchi</a></div>
+                  <p class="mb-6 text-sm leading-6">Lorem markdownum illic venturi instructa nobis Echidnae,  cum  quid magna fatebor. Levat placetque…</p>
+                  <div class="auth lg:flex lg:items-center ">
+                    <div class="avatar hidden lg:flex lg:justify-center lg:items-center lg:mr-5"><img class="hidden lg:flex lg:items-center lg:w-10 " src="./assets/image/john-doe.webp" alt=""/></div>
+                    <div class="info flex justify-between items-center lg:inline-block">
+                      <h3 class="name text-gray-500 font-weight text-xs font-bold lg:text-sm lg:mb-2">John Doe</h3>
+                      <div class="time text-xs text-gray-400 lg:text-sm"><span>May 16, 2020</span><span class="hidden lg:inline-block relative lg:ml-4"><span class=" absolute -top-1/4 lg:transform ">. </span><i class="far fa-clock text-base mx-2"></i>1 min</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subcrib mt-20 lg:mt-28"> 
+        <div class="container"> 
+          <div class="bg-white relative text-center rounded-lg shadow-md p-7 lg:p-8">
+            <div class="content py-4"> 
+              <div class="image hidden lg:inline-block "> <img class="fly w-36" src="./assets/image/fly.svg" alt=""/><img class="fly-cover w-28" src="./assets/image/fly-cover.svg" alt=""/></div>
+              <div class="heading">
+                <h2 class="font-bold text-black text-xl mb-3 lg:text-2xl lg:mb-4">Subscribe to our newsletter!</h2>
+                <p class="text-sm text-gray-500 mb-3 lg:text-base lg:w-5/12 lg:mb-4 lg:mx-auto">We'll send you the best of our blog just once a month. We promise.</p>
+              </div>
+              <div class="form-group">
+                <form class="flex flex-col" action="">
+                  <input class="mb-4  lg:mb-4 w-10/12 mx-auto lg:w-3/12 lg:p-2" type="text" placeholder="Email Adress"/>
+                  <button class="px-4 py-2" type="submit">Subscribe </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer bg-white mt-20"> 
+        <div class="container">
+          <div class="footer-content flex flex-col-reverse justify-center py-16 lg:flex-row lg:justify-between">
+            <div class="intro text-center">
+              <div class="image mb-5"> <img class="w-40 mx-auto  lg:mr-auto lg:mx-0" src="./assets/image/logo-dark.webp" alt=""/></div>
+              <div class="copy-right mb-2 lg:mb-5">
+                <p>© 2021, All Rights Reserved</p>
+              </div>
+              <div class="power"> <a class="flex items-center justify-center font-semibold text-black hover:text-blue-400 duration-200 ease-linear" href="#">Powered By <img class="w-24 ml-4" src="./assets/image/gatsta.svg" alt=""/></a></div>
+            </div>
+            <div class="item mb-10"> 
+              <h2 class="hidden lg:block lg:text-black lg:font-semibold lg:mb-4">Quick Links </h2>
+              <ul class="flex items-center justify-center lg:inline-block"> 
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear" href="#">Advertise with us </a></li>
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear" href="#">About Us </a></li>
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear" href="#">Contact Us </a></li>
+              </ul>
+            </div>
+            <div class="item"> 
+              <h2 class="hidden lg:block lg:text-black lg:font-semibold lg:mb-4">Legal Stuff </h2>
+              <ul class="flex items-center justify-center lg:inline-block"> 
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear" href="#">Privacy Notice </a></li>
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear" href="#">Cookie Policy</a></li>
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear" href="#">Team Of Use</a></li>
+              </ul>
+            </div>
+            <div class="item"> 
+              <h2 class="hidden lg:block lg:text-black lg:font-semibold lg:mb-4">Social Media</h2>
+              <ul class="flex items-center justify-center lg:inline-block"> 
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear lg:flex lg:items-center " href="#"> <img class="w-5 mx-auto  lg:mx-0 lg:mr-5" src="./assets/image/github.svg" alt=""/>Gitgub</a></li>
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear lg:flex lg:items-center " href="#"> <img class="w-5 mx-auto  lg:mx-0 lg:mr-5" src="./assets/image/twitter.svg" alt=""/>twitter </a></li>
+                <li class="mx-2 p-1 font-bold text-sm  lg:font-normal lg:mb-1 lg:text-base"> <a class="hover:text-blue-400 duration-200 ease-linear lg:flex lg:items-center " href="#"> <img class="mx-auto mr-5" src="./assets/image/insta.svg" alt=""/>Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="context-box hidden  lg:inline-block cursor-pointer lg:fixed lg:bottom-5 lg:right-0 z-10">
+        <div class="demo flex items-center py-4 pl-4 pr-16 bg-white rounded-xl shadow-lg w-44 mb-3">
+          <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <p class="ml-5 font-semibold text-sm">DEMO</p>
+        </div>
+        <div class="shoping flex items-center py-4 pl-4 pr-4 bg-white rounded-xl shadow-lg w-44"><img class="w-8" src="./assets/image/shop.svg" alt=""/>
+          <p class="ml-5 font-semibold text-sm">BUY NOW</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
